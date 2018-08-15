@@ -1,0 +1,7 @@
+user_valid:
+  name_length: 50
+  email_length: 255
+  email_syntax: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
+  password_length: 4
+users:
+  records: 5

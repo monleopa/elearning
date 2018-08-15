@@ -1,0 +1,12 @@
+en:
+  users:
+    new:
+      submit: "Tạo tài khoản"
+      signup: "Đăng nhập"
+    index:
+      list: "Danh sách người dùng:"
+    form:
+      name: "Họ tên"
+      email: "Email"
+      password: "Mật khẩu"
+    not_found: "Người dùng không tồn tại"
