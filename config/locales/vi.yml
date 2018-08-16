@@ -1,12 +1,29 @@
 en:
   users:
+    welcome: "Chào mừng đến với hệ thống Trắc nghiệm trực tuyến"
+    not_success: "Lỗi tạo người dùng mới"
     new:
       submit: "Tạo tài khoản"
-      signup: "Đăng nhập"
+      sign_up: "Đăng ký"
     index:
+      page_title: "Danh sách học viên"
+      sign_up: "Đăng ký"
       list: "Danh sách người dùng:"
     form:
       name: "Họ tên"
       email: "Email"
       password: "Mật khẩu"
+      password_confirmation: "Xác nhận lại mật khẩu"
     not_found: "Người dùng không tồn tại"
+  sessions:
+    error_login: "Email hoặc mật khẩu không hợp lệ"
+    hello_user: "Chào mừng quay trở lại"
+    new:
+      page_title: "Đăng nhập"
+      email: "Email"
+      password: "Mật khẩu"
+      remember_me: "Nhớ tôi"
+      submit_button: "Đăng nhập"
+      sign_up_page: "Đăng ký!"
+      new_user: "Học viên mới?"
+      remember_me: "Nhớ tôi"
