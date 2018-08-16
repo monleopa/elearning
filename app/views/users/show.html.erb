@@ -1,2 +1,4 @@
-<%= @user.name %>
-<%= @user.email %>
+<%= @user.name %><br>
+<%= @user.email %><br>
+<%= link_to t(".edit_page"), edit_user_path(current_user) %>
+<%= link_to t(".logout_page"), logout_path, method: :delete %>

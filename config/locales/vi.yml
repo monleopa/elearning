@@ -2,6 +2,7 @@ en:
   users:
     welcome: "Chào mừng đến với hệ thống Trắc nghiệm trực tuyến"
     not_success: "Lỗi tạo người dùng mới"
+    not_found: "Người dùng không tồn tại"
     new:
       submit: "Tạo tài khoản"
       sign_up: "Đăng ký"
@@ -14,7 +15,10 @@ en:
       email: "Email"
       password: "Mật khẩu"
       password_confirmation: "Xác nhận lại mật khẩu"
-    not_found: "Người dùng không tồn tại"
+    edit:
+      page_title: "Cập nhật hồ sơ"
+      submit_button: "Cập nhật"
+      update_profile: "Cập nhật hồ sơ của bạn"
   sessions:
     error_login: "Email hoặc mật khẩu không hợp lệ"
     hello_user: "Chào mừng quay trở lại"
@@ -26,4 +30,3 @@ en:
       submit_button: "Đăng nhập"
       sign_up_page: "Đăng ký!"
       new_user: "Học viên mới?"
-      remember_me: "Nhớ tôi"

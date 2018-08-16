@@ -2,9 +2,12 @@ en:
   users:
     welcome: "Welcome to Elearning system"
     not_success: "Error on creating user"
+    not_found: "User not found"
     new:
       submit: "Create my account"
       sign_up: "Sign Up"
+      welcome: "Welcome to"
+      e_learning: "E-Learning"
     index:
       page_title: "List users"
       sign_up: "Sign Up"
@@ -14,7 +17,10 @@ en:
       email: "Email"
       password: "Password"
       password_confirmation: "Password Confirmation"
-    not_found: "User not found"
+    edit:
+      page_title: "Update profile"
+      submit_button: "Update"
+      update_profile: "Update your profile"
   sessions:
     error_login: "Invalid email/password combination"
     hello_user: "Welcome back"
@@ -26,4 +32,7 @@ en:
       submit_button: "Log in"
       sign_up_page: "Sign up now!"
       new_user: "New User?"
-      remember_me: "Remember me"
+  shared:
+    error_messages:
+      error: "error"
+      the_form: "The form contains"

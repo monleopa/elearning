@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+<h1><%= t ".page_title" %></h1>
+<ul class="users">
+  <% @users.each do |user| %>
+    <li>
+      <%= render user %>
+    </li>
+  <% end %>
+  <%= paginate @users %>
+</ul>
+<br>
+<%= link_to t(".sign_up"), signup_path %>
