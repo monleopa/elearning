@@ -1,0 +1,116 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'color';
+ /* universal */
+ body {
+  padding-top: 60px;
+  background-image: image-url('white-background.jpg');
+}
+ section {
+  overflow: auto;
+}
+ textarea {
+  resize: vertical;
+}
+ .center {
+  text-align: center;
+  h1{
+    margin-bottom: 10px;
+  }
+}
+ h1{
+  color: $newblue;
+}
+ /*header*/
+ #logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color:  #66b3ff;
+  font-family: 'Courier New', Monospaced;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  &:hover {
+    text-decoration: none;
+  }
+}
+ li a{
+  display: block;
+  color: $newblue;
+  font-size: 17x;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  &:hover {
+    background-color: #111;
+  }
+}
+ #ihead{
+  background-color: #ebebe0;
+}
+ @mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+ /* miscellaneous */
+ .debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+ /* forms */
+ input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+ input {
+  height: auto !important;
+}
+ #error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+ .field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+ #welcome1 {
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 80px;
+  font-weight: 800;
+  letter-spacing: -3px;
+  line-height: 1;
+  text-shadow: #EDEDED 3px 2px 0;
+  position: relative;
+  text-align: center;
+}
+ #welcome2 {
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 100px;
+  font-weight: 800;
+  letter-spacing: -3px;
+  line-height: 1;
+  text-shadow: #EDEDED 3px 2px 0;
+  position: relative;
+  text-align: center;
+}

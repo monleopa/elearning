@@ -1,3 +1,12 @@
 <% provide :submit_title, t(".submit") %>
-<h1><%= t ".signup" %></h1>
-<%= render "form" %>
+<div class="row">
+  <div class="col-md-6 col-md-offset-1">
+    <br><br><br>
+    <h2 id="welcome1"><%= t ".welcome" %></h2>
+    <h2 id="welcome2"><%= t ".e_learning" %></h2>
+  </div>
+  <div class="col-md-4">
+    <h1>Sign up</h1>
+    <%= render "form" %>
+  </div>
+</div>
