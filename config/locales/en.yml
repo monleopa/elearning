@@ -1,8 +1,21 @@
 en:
+  layouts:
+    header:
+      e_learning: "E-Learning"
+      log_in: "Log In"
+      sign_up: "Sign Up"
+      lesson: "Lesson"
+      category: "Category"
+      logout: "Log Out"
   users:
     welcome: "Welcome to Elearning system"
     not_success: "Error on creating user"
     not_found: "User not found"
+    profile_updated: "Profile updated"
+    require_login: "Please log in"
+    error_permission: "You don't have permission"
+    error_delete: "Destroy user not successful"
+    success_delete: "User %{user_name} deleted"
     new:
       submit: "Create my account"
       sign_up: "Sign Up"
@@ -21,6 +34,9 @@ en:
       page_title: "Update profile"
       submit_button: "Update"
       update_profile: "Update your profile"
+    user:
+      delete: "Delete"
+      confirm: "You sure?"
   sessions:
     error_login: "Invalid email/password combination"
     hello_user: "Welcome back"

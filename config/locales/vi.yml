@@ -1,11 +1,26 @@
-en:
+vi:
+  layouts:
+    header:
+      e_learning: "E-Learning"
+      log_in: "Đăng nhập"
+      sign_up: "Đăng ký"
+      lesson: "Bài học"
+      category: "Chủ đề"
+      logout: "Đăng xuất"
   users:
     welcome: "Chào mừng đến với hệ thống Trắc nghiệm trực tuyến"
     not_success: "Lỗi tạo người dùng mới"
     not_found: "Người dùng không tồn tại"
+    profile_updated: "Đã cập nhật hồ sơ"
+    require_login: "Hãy đăng nhập"
+    error_permission: "Bạn không đủ quyền"
+    error_delete: "Xóa người dùng không thành công"
+    success_delete: "Đã xóa người dùng %{user_name}"
     new:
       submit: "Tạo tài khoản"
       sign_up: "Đăng ký"
+      welcome: "Hệ thống"
+      e_learning: "E-Learning"
     index:
       page_title: "Danh sách học viên"
       sign_up: "Đăng ký"
@@ -19,6 +34,9 @@ en:
       page_title: "Cập nhật hồ sơ"
       submit_button: "Cập nhật"
       update_profile: "Cập nhật hồ sơ của bạn"
+    user:
+      delete: "Xóa"
+      confirm: "Bạn chắc chắn chứ?"
   sessions:
     error_login: "Email hoặc mật khẩu không hợp lệ"
     hello_user: "Chào mừng quay trở lại"
@@ -30,3 +48,7 @@ en:
       submit_button: "Đăng nhập"
       sign_up_page: "Đăng ký!"
       new_user: "Học viên mới?"
+  shared:
+    error_messages:
+      error: "Lỗi"
+      the_form: "Biểu mẫu bao gồm"

@@ -5,3 +5,5 @@ user_valid:
   password_length: 4
 users:
   records: 5
+default_params:
+  href: "#"

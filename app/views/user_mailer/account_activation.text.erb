@@ -1,0 +1,7 @@
+t ".mail_title"
+t ".welcome"
+
+<%= t(".dear") %> <%= @user.name %>,
+<%= t(".text_mail_active") %>
+<%= edit_account_activation_url(locale,
+  @user.activation_token, email: @user.email) %>
