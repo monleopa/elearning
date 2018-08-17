@@ -9,7 +9,7 @@ class User < ApplicationRecord
     length: {maximum: Settings.user_valid.email_length},
     format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: false}
   validates :password, presence: true,
-    length: {minimum: Settings.user_valid.password_length}
+    length: {minimum: Settings.user_valid.password_length}, allow_nil: true
   scope :selected, ->{select :id, :name, :email}
   scope :ordered, ->{order name: :asc}
 
