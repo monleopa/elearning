@@ -1,0 +1,8 @@
+<h3><%= t ".new_lesson" %></h3>
+<%= form_for @lesson do |f| %>
+  <%= f.label :name%>
+  <%= f.text_field :name %>
+  <%= f.collection_select :category_id, Category.all, :id, :name,
+    include_blank: true %>
+  <%= f.submit %>
+<% end %>
