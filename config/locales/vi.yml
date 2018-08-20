@@ -1,11 +1,15 @@
-en:
+vi:
   users:
     welcome: "Chào mừng đến với hệ thống Trắc nghiệm trực tuyến"
     not_success: "Lỗi tạo người dùng mới"
     not_found: "Người dùng không tồn tại"
+    profile_updated: "Đã cập nhật hồ sơ"
+    require_login: "Hãy đăng nhập"
     new:
       submit: "Tạo tài khoản"
       sign_up: "Đăng ký"
+      welcome: "Hệ thống"
+      e_learning: "E-Learning"
     index:
       page_title: "Danh sách học viên"
       sign_up: "Đăng ký"
@@ -30,3 +34,22 @@ en:
       submit_button: "Đăng nhập"
       sign_up_page: "Đăng ký!"
       new_user: "Học viên mới?"
+  shared:
+    error_messages:
+      error: "Lỗi"
+      the_form: "Biểu mẫu bao gồm"
+  views:
+    pagination:
+      first: "Đầu"
+      previous: "Trước"
+      next: "Tiếp"
+      last: "Cuối"
+  activerecord:
+    errors:
+      messages:
+        record_invalid: "Bản ghi không hợp lệ"
+      models:
+        user:
+          attributes:
+            email:
+              taken: "Email đã được đăng ký"
