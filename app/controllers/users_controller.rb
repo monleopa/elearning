@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: %i(show edit update destroy)
-  before_action :load_user, only: %i(show edit update destroy)
+  before_action :logged_in_user, :load_user, only: %i(show edit update)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
@@ -38,15 +37,6 @@ class UsersController < ApplicationController
 
   def show; end
 
-  def destroy
-    if @user.destroy
-      flash[:success] = t ".success_delete", user_name: @user.name
-      redirect_to users_url
-    else
-      flash[:danger] = t ".error_delete"
-    end
-  end
-
   private
 
   def load_user
@@ -57,7 +47,7 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit :name, :email, :password,
-      :password_confirmation
+      :password_confirmation, :avatar
   end
 
   def logged_in_user
