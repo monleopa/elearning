@@ -1,0 +1,11 @@
+<div>
+  <%= image_tag @user.avatar.url %>
+</div>
+<br><br>
+<div>
+  <label for="avatar_upload">
+    <%= t ".change_ava" %>
+  </label>
+  <%= f.file_field :avatar, id: "avatar_upload" %>
+</div>
+<%= javascript_include_tag "custom", "data-turbolinks-track": "reload" %>

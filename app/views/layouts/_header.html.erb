@@ -1,12 +1,19 @@
 <header class="navbar navbar-fixed-top" id="ihead">
   <div class="container">
-    <%= link_to "E-learning", "#", id: "logo" %>
+    <%= link_to t(".e_learning"), root_path, id: "logo" %>
     <nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to t(".words"), questions_path %></li>
-        <li><%= link_to t(".home"), root_path %></li>
-        <li><%= link_to t(".login"), login_path %></li>
-      </ul>
+      <% if logged_in? %>
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to t(".category"), categories_path %></li>
+          <li><%= link_to t(".lesson"), lessons_path %></li>
+          <li><%= link_to t(".logout"), logout_path, method: :delete %></li>
+        </ul>
+      <% else %>
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to t(".log_in"), login_path %></li>
+          <li><%= link_to t(".sign_up"), signup_path %></li>
+        </ul>
+      <% end %>
     </nav>
   </div>
 </header>

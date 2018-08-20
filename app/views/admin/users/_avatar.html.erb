@@ -1,0 +1,8 @@
+<div class="text-center">
+  <%= image_tag @user.avatar.url, class: "img-responsive center" %>
+  <br>
+  <label for="avatar_upload">
+    <%= t".change_avatar" %>
+  </label>
+  <%= f.file_field :avatar, id: "avatar_upload" %>
+</div>

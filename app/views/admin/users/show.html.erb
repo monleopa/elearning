@@ -1,0 +1,13 @@
+<% provide :title, @user.name %>
+<div>
+  <div class="col-md-2">
+    <%= image_tag @user.avatar.url, class: "img-responsive" %>
+  </div>
+  <div class="col-md-5">
+    <%= @user.name %><br>
+    <%= @user.email %><br>
+  </div>
+</div>
+<% if current_user.admin? && !@user.admin? %>
+  <%= link_to t(".delete"), admin_destroy_user_path(@user), method: :delete %>
+<% end %>

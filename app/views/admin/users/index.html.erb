@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+<h1><%= t ".page_title" %></h1>
+<ul class="users">
+  <%= render partial: "user", collection: @users %>
+  <%= paginate @users %>
+</ul>
+<br>
+<% unless logged_in?  %>
+  <%= link_to t(".sign_up"), signup_path %>
+<% end %>
+<%= javascript_include_tag "custom", "data-turbolinks-track": "reload" %>
