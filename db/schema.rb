@@ -19,6 +19,12 @@ ActiveRecord::Schema.define(version: 2018_08_15_033255) do
     t.string "avatar"
     t.string "remember_digest"
     t.boolean "admin", default: false
+    t.string "activation_digest"
+    t.boolean "activated", default: false
+    t.string "activated_at"
+    t.string "datetime"
+    t.string "reset_digest"
+    t.string "reset_sent_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true

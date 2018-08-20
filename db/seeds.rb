@@ -1,11 +1,13 @@
 User.create! name:  "Example User",
   email: "example@railstutorial.org", password: "1111",
-  password_confirmation: "1111", admin: true
+  password_confirmation: "1111", admin: true, activated: true,
+  activated_at: Time.zone.now
 
 19.times do |n|
   name  = FFaker::Name.name
   email = "example-#{n+1}@railstutorial.org"
   password = "1111"
   User.create! name: name, email: email, password: password,
-    password_confirmation: password
+    password_confirmation: password, activated: true,
+    activated_at: Time.zone.now
 end
