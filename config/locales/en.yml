@@ -8,6 +8,7 @@ en:
     error_permission: "You don't have permission"
     error_delete: "Destroy user not successful"
     success_delete: "User %{user_name} deleted"
+    active_message: "Please check your email to activate your account"
     new:
       submit: "Create my account"
       sign_up: "Sign Up"
@@ -32,6 +33,8 @@ en:
   sessions:
     error_login: "Invalid email/password combination"
     hello_user: "Welcome back"
+    check_email: >
+      Account not activated. Check your email for the activation link
     new:
       page_title: "Log In"
       email: "Email"
@@ -40,7 +43,37 @@ en:
       submit_button: "Log in"
       sign_up_page: "Sign up now!"
       new_user: "New User?"
+      forgot_psswd: "(forgot password)"
   shared:
     error_messages:
       error: "error"
       the_form: "The form contains"
+  user_mailer:
+    account_activation:
+      mail_title: "Sign Up Successful"
+      welcome: "Welcome to E-learning System"
+      dear: "Dear"
+      html_mail_active_begin:
+        You have registered account successfully. Click this
+      html_mail_active_end:
+        to active your account and join all our courses
+      text_mail_active: >
+        You have registered account successfully. Click following link to
+        active your account and join all our courses:
+      active_link: "link"
+      subject: "Registration Confirmation"
+    password_reset:
+      subject: "Reset Your Password"
+  account_activations:
+    active_success: "Account activated!"
+    invalid_link: "Invalid activation link!"
+  password_resets:
+    psswd_reset_email: "Email sent with password reset instructions"
+    email_not_found: "Email address not found"
+    nil_psswd: "can't be empty"
+    reset_success: "Password has been reset"
+    expired_link: "Password reset link has expired"
+    new:
+      page_title: "Forgot password"
+      email: "Email"
+      submit: "Submit"
