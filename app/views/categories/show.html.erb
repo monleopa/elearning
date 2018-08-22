@@ -1,0 +1,10 @@
+<h3><%= @category.name %></h3>
+<br>
+<% @questions.each do |question|  %>
+  <%= question.word %>
+  <% question.answers.each do |answer| %>
+    <%= answer.mean if answer.correct? %>
+  <% end %>
+  <br>
+  <br>
+<% end %>

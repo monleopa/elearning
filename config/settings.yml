@@ -9,3 +9,6 @@ default_params:
   href: "#"
 alive_time:
   reset_password: 2
+
+number_answer: 4
+number_page: 5

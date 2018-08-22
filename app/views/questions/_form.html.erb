@@ -1,0 +1,18 @@
+<%= form_for(@question) do |f| %>
+  <div class="form-qa center">
+    <%= f.label :word %>
+    <%= f.text_field :word, class: "form-control" %>
+    <%= f.collection_select :category_id, Category.all, :id,
+    :name, include_blank: true %>
+    <%= f.fields_for :answers do |ff| %>
+      <div class="input-group">
+        <span class="input-group-addon form-qa">
+          <%= ff.check_box :correct%>
+        </span>
+        <%= ff.text_field :mean, class: "form-control" %>
+      </div>
+    <% end %>
+    <br>
+    <%= f.submit class: "btn btn-primary" %>
+  </div>
+<% end %>

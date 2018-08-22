@@ -77,3 +77,16 @@ en:
       page_title: "Forgot password"
       email: "Email"
       submit: "Submit"
+  layouts:
+    header:
+      words: "WORDS"
+      Home: "Home"
+      login: "LOG IN"
+  lessons:
+    show:
+      finish: "FINISH"
+    new:
+      new_lesson: "New Lesson"
+  categories:
+    create:
+      success: "A new category created!"

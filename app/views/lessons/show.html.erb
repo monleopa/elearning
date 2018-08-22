@@ -1,0 +1,19 @@
+<h2> Contest of <%= @lesson.name %> </h2>
+<%= form_for @result do |f| %>
+  <% number_of_ques = 0%> 
+  <% @questions.each_with_index do |question|  %>
+    <h4>
+      <%= number_of_ques = number_of_ques + 1 %>.
+      <%= question.word %>:
+    </h4>
+    <%= f.hidden_field :question_id, value: question.id %>
+    <% question.answers.each do |answer| %>
+      <%= f.radio_button :answer_id, answer.mean,
+        value: answer.id, name: question.id, checked: "true" %> <%= answer.mean %>
+    <% end %>
+    <%= f.hidden_field :lesson_id, value: @lesson.id %>
+    <br><br>
+  <% end %>
+  <%= f.submit t(".finish") %>
+<% end %>
+

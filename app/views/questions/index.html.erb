@@ -1,0 +1,18 @@
+<div class="container">
+  <% @questions.each do |question|  %>
+    <table class="table listwords center">
+      <tr class="fix-table">
+        <td> 
+          <%= question.word %>
+        </td>
+        <td>
+          <% question.answers.each do |answer| %>
+            <%= answer.mean if answer.correct? %>
+          <% end %>
+        </td>
+      </tr>
+    </table>
+    <br><br>
+  <% end %>
+  <%= paginate @questions %>
+</div>
