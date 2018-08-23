@@ -3,6 +3,7 @@ class User < ApplicationRecord
   before_save :downcase_email
   before_create :create_activation_digest
   VALID_EMAIL_REGEX = Settings.user_valid.email_syntax
+  mount_uploader :avatar, AvatarUploader
 
   has_secure_password
   validates :name,  presence: true,
@@ -12,6 +13,7 @@ class User < ApplicationRecord
     format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: false}
   validates :password, presence: true,
     length: {minimum: Settings.user_valid.password_length}, allow_nil: true
+  validate :avatar_size
 
   scope :selected, ->{select :id, :name, :email}
   scope :ordered, ->{order name: :asc}
@@ -74,5 +76,11 @@ class User < ApplicationRecord
   def create_activation_digest
     self.activation_token  = User.new_token
     self.activation_digest = User.digest activation_token
+  end
+
+  def avatar_size
+    if avatar.size > Settings.user_valid.avatar_size.megabytes
+      errors.add :avatar, t(".image_alert")
+    end
   end
 end

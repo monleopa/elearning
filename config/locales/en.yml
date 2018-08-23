@@ -54,9 +54,9 @@ en:
       welcome: "Welcome to E-learning System"
       dear: "Dear"
       html_mail_active_begin:
-        You have registered account successfully. Click this
+        "You have registered account successfully. Click this"
       html_mail_active_end:
-        to active your account and join all our courses
+        "to active your account and join all our courses"
       text_mail_active: >
         You have registered account successfully. Click following link to
         active your account and join all our courses:
@@ -90,3 +90,20 @@ en:
   categories:
     create:
       success: "A new category created!"
+  admin:
+    users:
+      user:
+        delete: "Delete"
+        confirm: "You sure?"
+      index:
+        require_login: "Please log in"
+      destroy:
+        success_delete: "User %{user_name} deleted"
+      show:
+        not_found: "User not found"
+      edit:
+        submit_button: "Update profile"
+      update:
+        profile_updated: "Your profile has been updated"
+  user:
+    image_alert: "should be less than 1MB"

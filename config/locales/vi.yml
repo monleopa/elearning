@@ -53,3 +53,8 @@ vi:
           attributes:
             email:
               taken: "Email đã được đăng ký"
+
+  admin:
+    users:
+      index:
+        require_login: "Hãy đăng nhập"

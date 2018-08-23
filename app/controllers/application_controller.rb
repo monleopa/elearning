@@ -10,7 +10,9 @@ class ApplicationController < ActionController::Base
     Rails.application.routes.default_url_options[:locale]= I18n.locale
   end
 
-  def default_url_options(options = {})
+  protected
+
+  def default_url_options options = {}
     {locale: I18n.locale}.merge options
   end
 end

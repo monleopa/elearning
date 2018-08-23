@@ -3,10 +3,12 @@ user_valid:
   email_length: 255
   email_syntax: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
   password_length: 4
+  avatar_size: 1
 users:
   records: 5
 default_params:
   href: "#"
+  avatar: "default_avatar.jpg"
 alive_time:
   reset_password: 2
 
