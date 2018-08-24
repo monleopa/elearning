@@ -4,19 +4,20 @@
     <title><%= t ".page_title" %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <%= stylesheet_link_tag "application", media: "all",
-      "data-turbolinks-track": "reload" %>
-    <%= javascript_include_tag "application",
-      "data-turbolinks-track": "reload" %>
+    <%= stylesheet_link_tag "admin", media: "all", "data-turbolinks-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
     <%= render "layouts/shim"%>
   </head>
+
   <body>
-    <%= render "layouts/header"%>
+    <%= render "layouts/admin/header"%>
     <div class="container">
       <% flash.each do |message_type, message| %>
         <div class="alert alert-<%= message_type %>"><%= message %></div>
       <% end %>
-      <%= yield %>
+      <div class="col-md-10 col-lg-10">
+        <%= yield %>
+      </div>
     </div>
   </body>
 </html>

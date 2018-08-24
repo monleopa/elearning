@@ -1,0 +1,52 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'color';
+/* universal */
+
+body {
+  padding-top: 60px;
+  background: $super-light-green;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*header*/
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: $newblue;
+  font-family: 'Courier New', Monospaced;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  position: -webkit-sticky;
+  position: sticky;
+  &:hover {
+    text-decoration: none;
+  }
+}
+li a {
+  display: block;
+  color: $newblue;
+  font-size: 17x;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  &:hover {
+    background-color: $light-gray;
+  }
+}
+#ihead {
+  background-color: $fixed-gray;
+}
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}

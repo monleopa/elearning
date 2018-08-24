@@ -1,4 +1,10 @@
-<%= @user.name %><br>
-<%= @user.email %><br>
-<%= link_to t(".edit_page"), edit_user_path(current_user) %>
-<%= link_to t(".logout_page"), logout_path, method: :delete %>
+<% provide :title, @user.name %>
+<div class="col-md-3">
+  <%= image_tag @user.avatar.url %>
+</div>
+<div class="col-md-9">
+  <%= @user.name %><br>
+  <%= @user.email %><br>
+  <%= link_to t(".edit_page"), edit_user_path(current_user) %><br>
+  <%= link_to t(".logout_page"), logout_path, method: :delete %>
+</div>

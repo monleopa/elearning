@@ -1,0 +1,9 @@
+<h1 class="center"><%= t ".mail_title" %></h1>
+<h2 class="center"><%= t ".welcome" %></h2>
+<p>
+  <%= t ".dear" %> <%= @user.name %>,<br>
+  <%= t ".html_mail_active_begin" %>
+  <%= link_to t(".active_link"), edit_account_activation_url(locale,
+    @user.activation_token, email: @user.email) %>
+  <%= t ".html_mail_active_end" %>
+</p>
